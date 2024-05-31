@@ -1,0 +1,31 @@
+{
+  "cal": {
+    "vajramConfigs": {
+      "ANY_DATA_PROVIDER": {
+        "P_DEFAULT": {
+          "bulkhead": {
+            "enabled": true,
+            "maxConcurrency": 5,
+            "type": "SEMAPHORE"
+          }
+        },
+        "P0": {
+          "bulkhead": {
+            "enabled": true,
+            "maxConcurrency": 10
+          }
+        }
+      },
+      "GetZuluResponseFromMystique": {
+        "P_DEFAULT": {
+          "bulkhead": {
+            "maxConcurrency": 10
+          }
+        },
+        "P0": {
+          "maxConcurrency": 20
+        }
+      }
+    }
+  }
+}

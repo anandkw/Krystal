@@ -92,7 +92,6 @@ configure(subprojects.findAll { it.name != 'krystal-bom' }) {
         constraints {
             implementation 'com.google.guava:guava:33.0.0-jre'
             implementation 'org.checkerframework:checker-qual:3.42.0'
-            implementation 'org.slf4j:slf4j-api:2.0.11'
             implementation 'jakarta.inject:jakarta.inject-api:2.0.1'
             implementation 'org.reflections:reflections:0.10.2'
             implementation 'com.squareup:javapoet:1.13.0'
